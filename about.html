@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="bpaas-design-system" content="editorial-apple">
+    <meta name="bpaas-design-theme" content="kr-warm-grid">
+    <title>연남 가라오케 TOP5 정보 - 예약 & 위치 가이드</title>
+    <meta name="description" content="연남 가라오케 TOP5의 상세 정보를 확인하세요. 위치, 가격, 시설, 예약 방법까지 한눈에. 연남동에서 가장 핫한 노래방 5곳의 모든 것. 문의 010-6279-0862">
+    <meta name="keywords" content="연남 가라오케 정보, 연남 노래방 위치, 연남 가라오케 가격, 연남 노래방 예약, 연남 가라오케 시설, 연남동 노래방 추천, 연남 가성비 노래방">
+    <link rel="canonical" href="https://t3b08-yn-karaoke-top5.vercel.app/info">
+    <meta property="og:title" content="연남 가라오케 TOP5 정보 - 끝내주는 밤을 위한 모든 것">
+    <meta property="og:description" content="연남에서 가장 핫한 가라오케 5곳의 상세 정보. 위치, 가격, 시설 총정리. 지금 확인하고 인생 노래방을 예약하세요.">
+    <style>
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background-color: #faf9f7;
+            color: #1a1a2e;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        h1, h2, h3, h4 {
+            font-weight: 700;
+            line-height: 1.2;
+        }
+        h1 {
+            font-size: 3rem;
+            letter-spacing: -0.02em;
+            margin-bottom: 1.5rem;
+        }
+        h2 {
+            font-size: 2rem;
+            letter-spacing: -0.01em;
+            margin-bottom: 1rem;
+        }
+        h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.75rem;
+        }
+        p {
+            margin-bottom: 1rem;
+        }
+        a {
+            color: #2d6a4f;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        a:hover {
+            color: #1b4332;
+        }
+        header {
+            background-color: #ffffff;
+            border-bottom: 1px solid #e8e6e3;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            letter-spacing: -0.03em;
+        }
+        nav {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+        nav a {
+            font-weight: 500;
+            font-size: 0.95rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        .hamburger-menu {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+            background: none;
+            border: none;
+            padding: 5px;
+        }
+        .hamburger-menu span {
+            display: block;
+            width: 25px;
+            height: 2px;
+            background-color: #1a1a2e;
+            transition: all 0.3s;
+        }
+        .tel-link {
+            display: inline-block;
+            background-color: #1a1a2e;
+            color: #ffffff;
+            padding: 0.5rem 1.25rem;
+            border-radius: 4px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: background-color 0.2s;
+        }
+        .tel-link:hover {
+            background-color: #2d6a4f;
+            color: #ffffff;
+        }
+        @media (max-width: 768px) {
+            .hamburger-menu {
+                display: flex;
+            }
+            nav {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background-color: #ffffff;
+                flex-direction: column;
+                padding: 1.5rem;
+                gap: 1rem;
+                border-bottom: 1px solid #e8e6e3;
+            }
+            nav.active {
+                display: flex;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+            h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+</head>
+<body>
+    <header>
+        <div class="header-inner">
+            <div class="logo">연남 KARAOKE</div>
+            <button class="hamburger-menu" aria-label="메뉴 열기">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav>
+                <a href="/">홈</a>
+                <a href="/top5">TOP5</a>
+                <a href="/info">정보</a>
+                <a href="/review">리뷰</a>
+                <a href="/contact">문의</a>
+                <a href="tel:010-6279-0862" class="tel-link">010-6279-0862</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section style="padding: 4rem 0; background-color: #ffffff;">
+            <div class="container">
+                <h1>연남 가라오케 TOP5<br>모든 정보를 공개한다</h1>
+                <p style="font-size: 1.25rem; max-width: 700px;">위치, 가격, 시설, 예약 방법까지. 네가 알아야 할 모든 것을 한곳에 모았다. 더 이상 검색하지 마라. 여기가 끝판왕이다.</p>
+            </div>
+        </section>
+
+        <section style="padding: 4rem 0;">
+            <div class="container">
+                <h2>📍 위치 & 접근성</h2>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 2rem;">
+                    <div style="background: #ffffff; padding: 2rem; border-radius: 8px; border: 1px solid #e8e6e3;">
+                        <h3>연남 메인 스트리트</h3>
+                        <p>홍대입구역 3번 출구에서 도보 7분. 연남동 중심가에 위치한 3개의 가라오케가 밀집. 주말엔 북적이니 미리 예약해라.</p>
+                        <p><strong>주소:</strong> 서울 마포구 연남동 227-1</p>
+                        <p><strong>주차:</strong> 전용 주차장 없음. 인근 공영주차장 이용 (도보 3분)</p>
+                    </div>
+                    <div style="background: #ffffff; padding: 2rem; border-radius: 8px; border: 1px solid #e8e6e3;">
+                        <h3>연남 서측</h3>
+                        <p>조용한 분위기를 원한다면 여기. 연남동 서쪽 끝에 위치한 2곳은 로컬들만 아는 숨은 명소다.</p>
+                        <p><strong>주소:</strong> 서울 마포구 연남동 570-10</p>
+                        <p><strong>주차:</strong> 건물 내 주차 가능 (5대)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section style="padding: 4rem 0; background-color: #ffffff;">
+            <div class="container">
+                <h2>💰 가격 & 패키지</h2>
+                <div style="overflow-x: auto;">
+                    <table style="width: 100%; border-collapse: collapse; margin-top: 2rem;">
+                        <thead>
+                            <tr style="background-color: #1a1a2e; color: #ffffff;">
+                                <th style="padding: 1rem; text-align: left;">업체명</th>
+                                <th style="padding: 1rem; text-align: left;">주중 2시간</th>
+                                <th style="padding: 1rem; text-align: left;">주말 2시간</th>
+                                <th style="padding: 1rem; text-align: left;">음료 포함</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="border-bottom: 1px solid #e8e6e3;">
+                                <td style="padding: 1rem;"><strong>보컬천국 연남점</strong></td>
+                                <td style="padding: 1rem;">25,000원</td>
+                                <td style="padding: 1rem;">35,000원</td>
+                                <td style="padding: 1rem;">O</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid #e8e6e3;">
+                                <td style="padding: 1rem;"><strong>노래방연구소</strong></td>
+                                <td style="padding: 1rem;">20,000원</td>
+                                <td style="padding: 1rem;">30,000원</td>
+                                <td style="padding: 1rem;">X</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid #e8e6e3;">
+                                <td style="padding: 1rem;"><strong>연남코인</strong></td>
+                                <td style="padding: 1rem;">10,000원</td>
+                                <td style="padding: 1rem;">15,000원</td>
+                                <td style="padding: 1rem;">X</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid #e8e6e3;">
+                                <td style="padding: 1rem;"><strong>루프탑 가라오케</strong></td>
+                                <td style="padding: 1rem;">40,000원</td>
+                                <td style="padding: 1rem;">55,000원</td>
+                                <td style="padding: 1rem;">O</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 1rem;"><strong>비트박스 연남</strong></td>
+                                <td style="padding: 1rem;">30,000원</td>
+                                <td style="padding: 1rem;">45,000원</td>
+                                <td style="padding: 1rem;">O</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p style="margin-top: 1.5rem; font-style: italic;">* 모든 가격은 변동될 수 있음. 각 업체에 확인해라.</p>
+            </div>
+        </section>
+
+        <section style="padding: 4rem 0;">
+            <div class="container">
+                <h2>🎤 시설 & 특이사항</h2>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin-top: 2rem;">
+                    <div style="background: #ffffff; padding: 1.5rem; border-radius: 8px; border: 1px solid #e8e6e3;">
+                        <h3>보컬천국 연남점</h3>
+                        <p>최신 JBL 스피커, 4K 스크린, 무료 WiFi. 최대 8인실. 발코니 흡연 가능.</p>
+                    </div>
+                    <div style="background: #ffffff; padding: 1.5rem; border-radius: 8px; border: 1px solid #e8e6e3;">
+                        <h3>노래방연구소</h3>
+                        <p>사운드 시스템에 진심인 곳. 녹음 기능 제공. 1인 부스 있음. 금요일엔 라이브 공연.</p>
+                    </div>
+                    <div style="background: #ffffff; padding: 1.5rem; border-radius: 8px; border: 1px solid #e8e6e3;">
+                        <h3>연남코인</h3>
+                        <p>24시간 운영. 코인식이라 부담 없음. 혼술, 혼노래에 최적화. 컵라면 무료.</p>
+                    </div>
+                    <div style="background: #ffffff; padding: 1.5rem; border-radius: 8px; border: 1px solid #e8e6e3;">
+                        <h3>루프탑 가라오케</h3>
+                        <p>옥상에서 노래하는 새로운 경험. 야외 바베큐 패키지 있음. 사전 예약 필수.</p>
+                    </div>
+                    <div style="background: #ffffff; padding: 1.5rem; border-radius: 8px; border: 1px solid #e8e6e3;">
+                        <h3>비트박스 연남</h3>
+                        <p>EDM 전용 룸 보유. DJ 부스와 조명 시스템. 단체 파티에 강추. 최대 20인.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section style="padding: 4rem 0; background-color: #ffffff;">
+            <div class="container">
+                <h2>📞 예약 방법</h2>
+                <p>전화 예약이 가장 빠르다. 카카오톡 채널로도 가능하지만, 전화가 확실하다. 예약 없이 방문하면 기다려야 할 수도 있다. 주말에는 최소 하루 전에 예약해라.</p>
+                <div style="display: flex; gap: 1rem; margin-top: 1.5rem; flex-wrap: wrap;">
+                    <a href="tel:010-6279-0862" class="tel-link" style="font-size: 1.1rem; padding: 0.75rem 2rem;">010-6279-0862</a>
+                    <a href="#" style="background-color: #2d6a4f; color: #ffffff; padding: 0.75rem 2rem; border-radius: 4px; font-weight: 600;">카카오톡 채널</a>
+                </div>
+            </div>
+        </section>
+
+        <section style="padding: 4rem 0;">
+            <div class="container">
+                <h2>❓ 자주 묻는 질문</h2>
+                <div style="margin-top: 2rem;">
+                    <div style="border-bottom: 1px solid #e8e6e3; padding: 1rem 0;">
+                        <h3 style="font-size: 1.1rem; margin-bottom: 0.25rem;">Q. 미성년자 출입 가능한가?</h3>
+                        <p>A. 모든 업체가 19세 이상 출입 가능. 신분증 검사 있음.</p>
+                    </div>
+                    <div style="border-bottom: 1px solid #e8e6e3; padding: 1rem 0;">
+                        <h3 style="font-size: 1.1rem; margin-bottom: 0.25rem;">Q. 반려동물 동반 가능?</h3>
+                        <p>A. 루프탑 가라오케만 가능. 나머지 업체는 불가.</p>
+                    </div>
+                    <div style="border-bottom: 1px solid #e8e6e3; padding: 1rem 0;">
+                        <h3 style="font-size: 1.1rem; margin-bottom: 0.25rem;">Q. 노래방에서 음식 주문 가능?</h3>
+                        <p>A. 보컬천국과 비트박스는 자체 메뉴 있음. 나머지는 외부 음식 반입 가능.</p>
+                    </div>
+                    <div style="padding: 1rem 0;">
+                        <h3 style="font-size: 1.1rem; margin-bottom: 0.25rem;">Q. 가장 늦게까지 하는 곳은?</h3>
+                        <p>A. 연남코인이 24시간. 나머지는 대부분 새벽 3시~5시 마감.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer style="background-color: #1a1a2e; color: #ffffff; padding: 3rem 0; margin-top: 4rem;">
+        <div class="container">
+            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
+                <div>
+</body>
+</html>
